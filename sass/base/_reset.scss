@@ -17,6 +17,15 @@ a {
 input, button {
   font-family: inherit;
   font-size: inherit;
+  border: none; 
+}
+
+button, input[type="submite"] {
+  cursor: pointer;
+  background: none;
+}
+input:focus, button:focus {
+  outline: none;
 }
 
 ul, li {
