@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #323232;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  padding-top: 35px;
+  padding-bottom: 33px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+.logo img {
+  padding-right: 5px;
+}
+
+.navigation ul {
+  display: flex;
+}
+.navigation li:not(:last-child) {
+  margin-right: 42px;
+}
+.navigation a:hover {
+  color: #f78434;
+  transition: all 0.3s;
+}
+.navigation a.active {
+  color: #f78434;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */
