@@ -1,0 +1,29 @@
+.objects {
+    padding-bottom: 80px;
+
+}
+
+.objects__row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.objects__text {
+    max-width: 543px;
+    padding-left: 130px;
+    flex-shrink: 0;
+
+    p+p {
+            margin-top: 20px;
+        }
+}
+
+.objects__title {
+    margin-bottom: 20px;
+
+}
+
+.objects__button {
+    margin-top: 40px;
+}
