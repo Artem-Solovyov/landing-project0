@@ -14,6 +14,7 @@
         transition: all 0.1s ease-in;
         transform: scale(1.01);
     }
+    
     &--white {
         background-color: #ffffff;
         color: #323232;
@@ -23,6 +24,9 @@
             background-color: #323232;
             color:#fff
         }
+    }
+    &--text-orange {
+        color: $accent-color
     }
 
     &--play {

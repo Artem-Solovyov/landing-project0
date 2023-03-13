@@ -117,6 +117,8 @@ html, body {
 }
 
 .form {
+  display: flex;
+  justify-content: space-between;
   background: #FFFFFF;
   box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
   border-radius: 29px;
@@ -134,6 +136,7 @@ html, body {
   align-items: center;
   padding-left: 72px;
   height: 100%;
+  flex-grow: 1;
 }
 .form__label::before {
   position: absolute;
@@ -179,6 +182,9 @@ html, body {
 .button--white:hover {
   background-color: #323232;
   color: #fff;
+}
+.button--text-orange {
+  color: #f78434;
 }
 .button--play {
   padding-left: 50px;
@@ -336,6 +342,278 @@ html, body {
   margin-top: 30px;
   display: flex;
   gap: 15px;
+}
+
+.serve {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.serve::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 650px;
+  background-color: #F5F6FA;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: -1;
+}
+
+.serve__heading {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.serve__heading p {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.15px;
+}
+
+.serve__row {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-customer {
+  text-align: center;
+  width: 47%;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-bottom: 40px;
+  transition: all 0.3s ease-in;
+  padding-top: 40px;
+}
+.card-customer__icon {
+  transition: fill 0.3s ease-in;
+  fill: #F78434;
+}
+.card-customer:hover {
+  background-color: #f78434;
+  color: white;
+}
+.card-customer:hover .card-customer__icon {
+  fill: #fff;
+}
+.card-customer__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 63px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.card-customer p {
+  width: 364px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 1.15px;
+  padding-bottom: 25px;
+}
+
+.benefits {
+  padding-top: 13px;
+  padding-bottom: 100px;
+}
+.benefits__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.benefits__icons {
+  fill: #58BEBF;
+  transition: all 0.15s ease-in;
+}
+.benefits__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.benefits__card {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.15s ease-in;
+}
+.benefits__card:hover {
+  background-color: #F5F6FA;
+  transform: scale(1.06);
+}
+.benefits__card:hover .benefits__icons {
+  fill: #f78434;
+  transform: scale(1.2);
+}
+.benefits__card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 1.15px;
+}
+.benefits__title {
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.testimonials__text {
+  display: flex;
+  align-items: center;
+  padding-bottom: 58px;
+}
+.testimonials__text p {
+  padding-left: 20%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.15px;
+  color: #606060;
+}
+
+.testimonials__cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials__cards::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: -40px;
+  top: -40px;
+  background-image: url("./../img/testimonials/Shape.svg");
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.testimonials__card-img {
+  position: relative;
+}
+.testimonials__card-img-play {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(50%);
+  transition: transform 0.15s ease-in, opacity 0.15s ease-in;
+}
+
+.testimonials__card {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 350px;
+  transition: all 0.2s ease-in;
+}
+.testimonials__card img {
+  padding-bottom: 50px;
+}
+.testimonials__card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 12px 52px rgba(100, 0, 0, 0.1);
+}
+.testimonials__card:hover .testimonials__card-country {
+  color: #f78434;
+}
+.testimonials__card:hover .testimonials__card-img-play {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonials__card-text p {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.15px;
+  color: #323232;
+}
+
+.testimonials__card-author {
+  padding-left: 30px;
+  padding-bottom: 1px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.6px;
+  color: #323232;
+}
+
+.testimonials__card-country {
+  padding-left: 30px;
+  padding-bottom: 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.15px;
+  color: #58BEBF;
+  transition: color 0.2s ease-in;
+}
+
+.contacts {
+  position: relative;
+  padding-top: 200px;
+  margin-bottom: 96px;
+  background-image: url("./../img/contacts/Bg.svg");
+  background-size: cover;
+  padding-bottom: 55px;
+}
+.contacts::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 743px;
+  height: 371px;
+  background-image: url("./../img/contacts/Oval-bg.svg");
+  background-size: cover;
+}
+.contacts::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 53%;
+  width: 478px;
+  height: 547px;
+  background-image: url("./../img/contacts/girl.png");
+  background-size: cover;
+}
+
+.contacts__info {
+  max-width: 360px;
+}
+.contacts__info .contact__title {
+  padding-bottom: 15px;
+  color: #fff;
+}
+.contacts__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.15px;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+  max-width: 342px;
 }
 
 /*# sourceMappingURL=main.css.map */
